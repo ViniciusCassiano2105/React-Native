@@ -1,5 +1,12 @@
 import React from "react";
-import { Image, SafeAreaView, Text, View } from "react-native";
+import {
+  Alert,
+  Image,
+  SafeAreaView,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import MyProfileImage from "./assets/eu.jpg";
 import { styles } from "./styles";
 
@@ -17,8 +24,20 @@ export default function App() {
       <SafeAreaView style={styles.container}>
         <View style={styles.box}>
           <ProfileImage />
-          <View style={styles.infoTudo}>
-            <Text>Tudo</Text>
+          <View style={styles.buttonTudo}>
+          <TouchableOpacity>
+                <Text>Tudo</Text>
+              </TouchableOpacity>
+            <View style={styles.buttonMusica}>
+            <TouchableOpacity>
+                <Text>Música</Text>
+              </TouchableOpacity>
+            </View>
+            <View style={styles.buttonPodcasts}>
+              <TouchableOpacity>
+                <Text>Podcasts</Text>
+              </TouchableOpacity>
+            </View>
           </View>
         </View>
       </SafeAreaView>

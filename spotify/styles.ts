@@ -26,8 +26,8 @@ export const styles = StyleSheet.create({
     borderRadius: 40,
   },
 
-  infoTudo: {
-    marginTop: 50,
+  buttonTudo: {
+    marginTop: 52,
     width: 65,
     height: 38,
     borderRadius: 40,
@@ -35,6 +35,31 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     marginLeft: 20,
+    color: "#000000",
+  },
+
+  buttonMusica: {
+    marginTop: 70,
+    width: 65,
+    height: 38,
+    borderRadius: 40,
+    backgroundColor: "#FFFFFF",
+    alignItems: "center",
+    justifyContent: "center",
+    marginLeft: 150,
+    color: "#000000",
+  },
+
+  buttonPodcasts: {
+    marginBottom: 80,
+    width: 65,
+    height: 38,
+    borderRadius: 40,
+    backgroundColor: "#FFFFFF",
+    alignItems: "center",
+    justifyContent: "center",
+    position: "relative",
+    left: 200,
     color: "#000000",
   },
 });
