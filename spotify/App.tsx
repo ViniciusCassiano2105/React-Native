@@ -8,6 +8,10 @@ import {
 } from "react-native";
 import MyProfileImage from "./assets/eu.jpg";
 import FavMusicImage from "./assets/musicascurtidas.jpg";
+import IncubusMusicImage from "./assets/incubus.jpg";
+import RedHotMusicImage from "./assets/redhotchilipeppers.jpg";
+import AudioslaveImage from "./assets/audioslave.jpg";
+
 import { styles } from "./styles";
 
 const ProfileImage = () => {
@@ -21,7 +25,28 @@ const ProfileImage = () => {
 const FavMusic = () => {
   return (
     <View>
-      <Image source={FavMusicImage} style={styles.favMusic} />
+      <Image source={FavMusicImage} style={styles.Musicimgleft} />
+    </View>
+  );
+};
+const IncubusMusic = () => {
+  return (
+    <View>
+      <Image source={IncubusMusicImage} style={styles.Musicimgright}/>
+    </View>
+  );
+};
+const RedHotMusic = () => {
+  return (
+    <View>
+      <Image source={RedHotMusicImage} style={styles.Musicimgleft}/>
+    </View>
+  );
+};
+const AudioslaveMusic = () => {
+  return (
+    <View>
+      <Image source={AudioslaveImage} style={styles.Musicimgright}/>
     </View>
   );
 };
@@ -35,17 +60,17 @@ export default function App() {
             <ProfileImage />
             <View style={styles.buttonTudo}>
               <TouchableOpacity>
-                <Text>Tudo</Text>
+                <Text style={styles.textButton}>Tudo</Text>
               </TouchableOpacity>
             </View>
             <View style={styles.buttonMusica}>
               <TouchableOpacity>
-                <Text>Música</Text>
+                <Text style={styles.textButton}>Música</Text>
               </TouchableOpacity>
             </View>
             <View style={styles.buttonPodcasts}>
               <TouchableOpacity>
-                <Text>Podcasts</Text>
+                <Text style={styles.textButton}>Podcasts</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -53,11 +78,38 @@ export default function App() {
       </SafeAreaView>
 
       <View style={styles.allCards}>
-        <View style={styles.cardsLeft}>
+        <View style={styles.cardsLeftTop}>
           <FavMusic />
-          <Text style={styles.text}>Músicas Curtidas</Text>
+          <Text style={styles.text}>{"Músicas \nCurtidas"}</Text>
         </View>
-        <View style={styles.cardsRight}></View>
+        <View style={styles.cardsRightTop}>
+        <IncubusMusic/>
+        <Text style={styles.text}>{"This Is \nIncubus"}</Text>
+        </View>
+        <View style={styles.cardsLeft}>
+        <RedHotMusic />
+        <Text style={styles.text}>{"This Is Red Hot\nChili Peppers"}</Text>
+        </View>
+        <View style={styles.cardsRight}>
+        <AudioslaveMusic/>
+        <Text style={styles.text}>{"Audioslave"}</Text>
+        </View>
+        <View style={styles.cardsLeft}>
+        <FavMusic />
+        <Text style={styles.text}>{"Músicas \nCurtidas"}</Text>
+        </View>
+        <View style={styles.cardsRight}>
+        <IncubusMusic/>
+        <Text style={styles.text}>{"This Is \nIncubus"}</Text>
+        </View>
+        <View style={styles.cardsLeft}>
+        <FavMusic />
+        <Text style={styles.text}>{"Músicas \nCurtidas"}</Text>
+        </View>
+        <View style={styles.cardsRight}>
+        <IncubusMusic/>
+        <Text style={styles.text}>{"This Is \nIncubus"}</Text>
+        </View>
       </View>
     </View>
   );
