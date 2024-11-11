@@ -14,11 +14,11 @@ export const styles = StyleSheet.create({
     left: 0,
     right: 0,
     width: "100%",
-    zIndex: 1000,
-    height: 80,
+    height: 85,
     backgroundColor: "#121212",
     flexDirection: "row",
-    paddingBottom: 10,
+    paddingBottom: 15,
+    zIndex: 1000,
   },
 
   boxButton: {
@@ -151,7 +151,7 @@ export const styles = StyleSheet.create({
   textStation: {
     marginTop: 20,
     color: "#FFFFFF",
-    fontSize: 20,
+    fontSize: 22,
     fontWeight: "bold",
     paddingLeft: 10,
   },
@@ -162,10 +162,32 @@ export const styles = StyleSheet.create({
     paddingLeft: 11,
   },
 
+  textPlaylistScroll: {
+    marginTop: 10,
+    marginBottom: 70,
+    color: "#ADADAD",
+    fontSize: 12,
+    position: "relative",
+    left: 11,
+  },
+
   imgStation: {
     marginTop: 15,
     marginLeft: 12,
     width: 150,
     height: 150,
+  },
+
+  allplayslists: {},
+
+  footer: {
+    position: "absolute",
+    bottom: 0,
+    width: "100%",
+    height: 120,
+    backgroundColor: "#121212",
+    flexDirection: "row",
+    paddingBottom: 15,
+    zIndex: 1000,
   },
 });

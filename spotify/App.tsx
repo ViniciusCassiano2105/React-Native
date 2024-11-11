@@ -7,12 +7,15 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
+
+//img Profile
+import MyProfileImage from "./assets/eu.jpg";
+
 //Img cards
 import AliceInChainsImage from "./assets/aliceinchains.jpg";
 import AllenLandImage from "./assets/allenlande.jpg";
 import ArticMonkeysImage from "./assets/articmonkeys.jpg";
 import AudioslaveImage from "./assets/audioslave.jpg";
-import MyProfileImage from "./assets/eu.jpg";
 import IncubusMusicImage from "./assets/incubus.jpg";
 import LinkinParkImage from "./assets/linkinpark.jpg";
 import FavMusicImage from "./assets/musicascurtidas.jpg";
@@ -26,6 +29,18 @@ import RadioEdguyImage from "./assets/radioedguy.jpg";
 import RadioFooFightersImage from "./assets/radiofoofighters.jpg";
 import RadioPearlJamImage from "./assets/radiopearljam.jpg";
 import RadioStrokesImage from "./assets/radiostrokes.jpg";
+
+//img Playlists
+import Playlist90acousticImage from "./assets/playslist90sacoustic.jpg";
+import Playlist90rockAnthesImage from "./assets/playslist90srockanthes.jpg";
+import Playlist90RockDriveImage from "./assets/playslist90srockdrive.jpg";
+import PlaylistCapitalInicialImage from "./assets/playslistcapitalinicial.jpg";
+import PlaylistEdguyImage from "./assets/playslisthisisedguy.jpg";
+import PlaylistMusicaPopularCaicaraImage from "./assets/playslistmusicapopularcaiçara.jpg.png";
+import PlaylistRockAcusticoImage from "./assets/playslistrockacustico.jpg";
+
+//icons
+import homeImage from "./assets/icons/icons8-casa-50.png";
 
 import { styles } from "./styles";
 
@@ -162,15 +177,99 @@ const RadioStrokesMusic = () => {
     <View>
       <Image source={RadioStrokesImage} style={styles.imgStation} />
       <Text style={styles.textStationScroll}>
-        {"Arctic Monkeys, The Kooks, Oasis, \nWeezer, Stereophonics,..."}
+        {"Arctic Monkeys, The Kooks, \nWeezer, Oasis, Stereophoni..."}
       </Text>
+    </View>
+  );
+};
+
+//const Playlists
+const Playlist90RockDriveMusic = () => {
+  return (
+    <View>
+      <Image source={Playlist90RockDriveImage} style={styles.imgStation} />
+      <Text style={styles.textPlaylistScroll}>
+        {"Arctic Monkeys, The Kooks, \nWeezer, Oasis, Stereophoni..."}
+      </Text>
+    </View>
+  );
+};
+const PlaylistCapitalInicialMusic = () => {
+  return (
+    <View>
+      <Image source={PlaylistCapitalInicialImage} style={styles.imgStation} />
+      <Text style={styles.textPlaylistScroll}>
+        {"Arctic Monkeys, The Kooks, \nWeezer, Oasis, Stereophoni..."}
+      </Text>
+    </View>
+  );
+};
+const PlaylistEdguyMusic = () => {
+  return (
+    <View>
+      <Image source={PlaylistEdguyImage} style={styles.imgStation} />
+      <Text style={styles.textPlaylistScroll}>
+        {"Arctic Monkeys, The Kooks, \nWeezer, Oasis, Stereophoni..."}
+      </Text>
+    </View>
+  );
+};
+const PlaylistMusicaPopularCaicaraMusic = () => {
+  return (
+    <View>
+      <Image
+        source={PlaylistMusicaPopularCaicaraImage}
+        style={styles.imgStation}
+      />
+      <Text style={styles.textPlaylistScroll}>
+        {"Arctic Monkeys, The Kooks, \nWeezer, Oasis, Stereophoni..."}
+      </Text>
+    </View>
+  );
+};
+const Playlist90rockAnthesMusic = () => {
+  return (
+    <View>
+      <Image source={Playlist90rockAnthesImage} style={styles.imgStation} />
+      <Text style={styles.textPlaylistScroll}>
+        {"Arctic Monkeys, The Kooks, \nWeezer, Oasis, Stereophoni..."}
+      </Text>
+    </View>
+  );
+};
+const Playlist90acousticMusic = () => {
+  return (
+    <View>
+      <Image source={Playlist90acousticImage} style={styles.imgStation} />
+      <Text style={styles.textPlaylistScroll}>
+        {"Arctic Monkeys, The Kooks, \nWeezer, Oasis, Stereophoni..."}
+      </Text>
+    </View>
+  );
+};
+const PlaylistRockAcusticoMusic = () => {
+  return (
+    <View>
+      <Image source={PlaylistRockAcusticoImage} style={styles.imgStation} />
+      <Text style={styles.textPlaylistScroll}>
+        {"Arctic Monkeys, The Kooks, \nWeezer, Oasis, Stereophoni..."}
+      </Text>
+    </View>
+  );
+};
+
+const Home = () => {
+  return (
+    <View>
+      <Image source={homeImage} />
+      <Text style={styles.textPlaylistScroll}>{"Início"}</Text>
     </View>
   );
 };
 
 export default function App() {
   return (
-    <ScrollView style={styles.screen}>
+    <View style={styles.screen}>
       <SafeAreaView style={styles.container}>
         <View style={styles.box}>
           <View style={styles.boxButton}>
@@ -193,54 +292,71 @@ export default function App() {
           </View>
         </View>
       </SafeAreaView>
+      <ScrollView>
+        <View style={styles.allCards}>
+          <View style={styles.cardsLeftTop}>
+            <FavMusic />
+            <Text style={styles.text}>{"Músicas \nCurtidas"}</Text>
+          </View>
+          <View style={styles.cardsRightTop}>
+            <IncubusMusic />
+            <Text style={styles.text}>{"This Is \nIncubus"}</Text>
+          </View>
+          <View style={styles.cardsLeft}>
+            <RedHotMusic />
+            <Text style={styles.text}>{"This Is Red Hot\nChili Peppers"}</Text>
+          </View>
+          <View style={styles.cardsRight}>
+            <AudioslaveMusic />
+            <Text style={styles.text}>{"Audioslave"}</Text>
+          </View>
+          <View style={styles.cardsLeft}>
+            <AliceInChainsMusic />
+            <Text style={styles.text}>{"This Is Alice In \nChains"}</Text>
+          </View>
+          <View style={styles.cardsRight}>
+            <ArticMonkeysMusic />
+            <Text style={styles.text}>{"Arctic Monkeys"}</Text>
+          </View>
+          <View style={styles.cardsLeft}>
+            <AllenLandeMusic />
+            <Text style={styles.text}>{"This Is Allen \nLand"}</Text>
+          </View>
+          <View style={styles.cardsRight}>
+            <LinkinParkMusic />
+            <Text style={styles.text}>{"Linkin Park"}</Text>
+          </View>
+        </View>
 
-      <View style={styles.allCards}>
-        <View style={styles.cardsLeftTop}>
-          <FavMusic />
-          <Text style={styles.text}>{"Músicas \nCurtidas"}</Text>
+        <View style={styles.allplayslists}>
+          <Text style={styles.textStation}>Estações recomendadas</Text>
+          <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+            <RadioAlterBridgeMusic />
+            <RadioAudioslaveMusic />
+            <RadioChrisCornellMusic />
+            <RadioEdguyMusic />
+            <RadioFooFightersMusic />
+            <RadioPearlJamMusic />
+            <RadioStrokesMusic />
+          </ScrollView>
         </View>
-        <View style={styles.cardsRightTop}>
-          <IncubusMusic />
-          <Text style={styles.text}>{"This Is \nIncubus"}</Text>
-        </View>
-        <View style={styles.cardsLeft}>
-          <RedHotMusic />
-          <Text style={styles.text}>{"This Is Red Hot\nChili Peppers"}</Text>
-        </View>
-        <View style={styles.cardsRight}>
-          <AudioslaveMusic />
-          <Text style={styles.text}>{"Audioslave"}</Text>
-        </View>
-        <View style={styles.cardsLeft}>
-          <AliceInChainsMusic />
-          <Text style={styles.text}>{"This Is Alice In \nChains"}</Text>
-        </View>
-        <View style={styles.cardsRight}>
-          <ArticMonkeysMusic />
-          <Text style={styles.text}>{"Arctic Monkeys"}</Text>
-        </View>
-        <View style={styles.cardsLeft}>
-          <AllenLandeMusic />
-          <Text style={styles.text}>{"This Is Allen \nLand"}</Text>
-        </View>
-        <View style={styles.cardsRight}>
-          <LinkinParkMusic />
-          <Text style={styles.text}>{"Linkin Park"}</Text>
-        </View>
-      </View>
 
-      <View>
-        <Text style={styles.textStation}>Estações recomendadas</Text>
-        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-          <RadioAlterBridgeMusic />
-          <RadioAudioslaveMusic />
-          <RadioChrisCornellMusic />
-          <RadioEdguyMusic />
-          <RadioFooFightersMusic />
-          <RadioPearlJamMusic />
-          <RadioStrokesMusic />
-        </ScrollView>
+        <View style={styles.allplayslists}>
+          <Text style={styles.textStation}>Suas músicas estão com saudade</Text>
+          <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+            <Playlist90RockDriveMusic />
+            <PlaylistCapitalInicialMusic />
+            <PlaylistEdguyMusic />
+            <PlaylistMusicaPopularCaicaraMusic />
+            <Playlist90rockAnthesMusic />
+            <Playlist90acousticMusic />
+            <PlaylistRockAcusticoMusic />
+          </ScrollView>
+        </View>
+      </ScrollView>
+      <View style={styles.footer}>
+        <Home />
       </View>
-    </ScrollView>
+    </View>
   );
 }
