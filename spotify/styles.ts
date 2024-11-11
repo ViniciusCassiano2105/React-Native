@@ -37,7 +37,7 @@ export const styles = StyleSheet.create({
   },
 
   textButton: {
-  color: "#FFFFFF"
+    color: "#FFFFFF",
   },
 
   buttonTudo: {
@@ -76,16 +76,16 @@ export const styles = StyleSheet.create({
   },
 
   allCards: {
-    flexDirection: 'row',       
-    flexWrap: 'wrap',            
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "space-between",
   },
 
   text: {
-    color: '#FFFFFF',
+    color: "#FFFFFF",
     fontSize: 14,
-    fontWeight: 'bold',
-    paddingLeft:10
+    fontWeight: "bold",
+    paddingLeft: 10,
   },
 
   cardsLeftTop: {
@@ -96,7 +96,7 @@ export const styles = StyleSheet.create({
     backgroundColor: "#333333",
     borderRadius: 4,
     flexDirection: "row",
-    alignItems: 'center',
+    alignItems: "center",
   },
   cardsRightTop: {
     marginTop: 100,
@@ -108,8 +108,7 @@ export const styles = StyleSheet.create({
     backgroundColor: "#333333",
     borderRadius: 4,
     flexDirection: "row",
-    alignItems: 'center',
-    
+    alignItems: "center",
   },
 
   cardsLeft: {
@@ -120,7 +119,7 @@ export const styles = StyleSheet.create({
     backgroundColor: "#333333",
     borderRadius: 4,
     flexDirection: "row",
-    alignItems: 'center',
+    alignItems: "center",
   },
   cardsRight: {
     marginTop: 10,
@@ -132,10 +131,8 @@ export const styles = StyleSheet.create({
     backgroundColor: "#333333",
     borderRadius: 4,
     flexDirection: "row",
-    alignItems: 'center',
-    
+    alignItems: "center",
   },
-
 
   Musicimgleft: {
     borderTopLeftRadius: 4,
@@ -149,5 +146,26 @@ export const styles = StyleSheet.create({
     borderBottomLeftRadius: 4,
     height: 60,
     width: 60,
+  },
+
+  textStation: {
+    marginTop: 20,
+    color: "#FFFFFF",
+    fontSize: 20,
+    fontWeight: "bold",
+    paddingLeft: 10,
+  },
+  textStationScroll: {
+    marginTop: 10,
+    color: "#ADADAD",
+    fontSize: 12,
+    paddingLeft: 11,
+  },
+
+  imgStation: {
+    marginTop: 15,
+    marginLeft: 12,
+    width: 150,
+    height: 150,
   },
 });
