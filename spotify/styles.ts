@@ -30,6 +30,7 @@ export const styles = StyleSheet.create({
     margin: 10,
   },
   profileImage: {
+    marginLeft: 5,
     marginTop: 45,
     width: 35,
     height: 35,
@@ -178,16 +179,84 @@ export const styles = StyleSheet.create({
     height: 150,
   },
 
-  allplayslists: {},
+  //allplayslists: {},
 
   footer: {
     position: "absolute",
     bottom: 0,
     width: "100%",
     height: 120,
-    backgroundColor: "#121212",
     flexDirection: "row",
+    justifyContent: "center",
     paddingBottom: 15,
     zIndex: 1000,
+    backgroundColor: "#00000080",
+  },
+
+  iconContainer: {
+    alignItems: "center",
+    marginVertical: 25,
+    marginHorizontal: 35,
+  },
+
+  icons: {
+    width: 25,
+    height: 25,
+  },
+  texticons: {
+    position: "relative",
+    textAlign: "center",
+    color: "#FFFFFF",
+    fontSize: 12,
+  },
+  // pag search
+
+  buscar: {
+    marginTop: 40,
+    width: 85,
+    height: 35,
+    alignItems: "center",
+    justifyContent: "center",
+    marginLeft: 2,
+  },
+  textbuscar: {
+    fontSize: 25,
+    color: "#FFFFFF",
+    fontWeight: "bold",
+  },
+
+  pictureImage: {
+    marginLeft: 185,
+    marginTop: 48,
+    width: 36,
+    height: 36,
+    borderRadius: 40,
+  },
+
+  containerimput: {
+    position: "absolute",
+    top: 120,
+    width: "100%",
+    height: 85,
+    backgroundColor: "#121212",
+    zIndex: 1000,
+  },
+  input: {
+    width: "100%",
+    height: 52,
+    backgroundColor: "#FFFFFF",
+    borderWidth: 1,
+    paddingHorizontal: 10,
+    borderRadius: 8,
+    color: "#333333",
+    fontSize: 18,
+  },
+
+  searchContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    borderWidth: 1,
+    borderRadius: 5,
+    paddingHorizontal: 10,
   },
 });
