@@ -179,8 +179,6 @@ export const styles = StyleSheet.create({
     height: 150,
   },
 
-  //allplayslists: {},
-
   footer: {
     position: "absolute",
     bottom: 0,
@@ -227,7 +225,7 @@ export const styles = StyleSheet.create({
 
   pictureImage: {
     marginLeft: 185,
-    marginTop: 48,
+    marginTop: 42,
     width: 36,
     height: 36,
     borderRadius: 40,
@@ -258,5 +256,79 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 5,
     paddingHorizontal: 10,
+  },
+  gifcontainer: {
+    width: 116,
+    height: 210,
+    borderRadius: 20,
+    overflow: "hidden",
+  },
+
+  explore: {
+    paddingVertical: 170,
+  },
+
+  textgeneros: {
+    fontSize: 17,
+    paddingVertical: 30,
+    paddingHorizontal: 12,
+    color: "#FFFFFF",
+    fontWeight: "bold",
+  },
+  allgifs: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginHorizontal: 10,
+  },
+
+  gifpower: {
+    width: "100%",
+    height: "106%",
+    bottom:15
+  },
+
+  gifgaucho:{
+    width: "100%",
+    height: "110%",
+    position:"relative",
+    bottom:27
+  },
+
+  gifmpb:{
+    width: "100%",
+    height: "112%",
+    position:"relative",
+    bottom:33
+  },
+  
+
+  gif: {
+    width: "100%",
+    height: "100%",
+  },
+
+  imgsection: {
+    width: 180,
+    height: 100, // A imagem ocupará toda a altura da div
+    borderRadius: 4,
+    objectFit: "cover", // Isto ajuda a manter a imagem coberta sem distorção, se necessário
+  },
+
+  allsection: {
+    flexDirection: "row", // Organiza os itens horizontalmente
+    flexWrap: "wrap", // Permite quebrar para a próxima linha
+    marginLeft: 10, // Espaço à esquerda do contêiner
+  },
+
+  section: {
+    // Espaço entre os itens
+    width: "50%", // Ajuste para caber duas colunas (50% cada, com margem)
+    height: 105, // Altura fixa para cada imagem
+    overflow: "hidden", // Garante que a imagem não ultrapasse os limites da div
+    marginBottom: 10, // Espaço entre as linhas de imagens
+  },
+  scrollView: {
+    flex: 1, // Faz com que o ScrollView ocupe todo o espaço disponível
+    paddingBottom: 20, // Pode adicionar um pequeno padding no final
   },
 });
