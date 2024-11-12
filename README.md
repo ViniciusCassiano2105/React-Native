@@ -32,8 +32,8 @@ O objetivo deste projeto é clonar duas telas do aplicativo Spotify, mantendo o 
 - Estilo responsivo e adaptável.
 
 - ## Telas Clonadas
-  ![Spotify Home](spotify1.jpg)
-  ![Spotify Search](spotify2.jpg)
+  ![spotify1](spotify1.jpg)
+  ![spotify2](spotify2.jpg)
 
 ## Como Executar o Projeto
 
