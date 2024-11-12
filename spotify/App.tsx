@@ -8,7 +8,6 @@ import {
   View,
 } from "react-native";
 
-// Importação das imagens
 import MyProfileImage from "./assets/eu.jpg";
 import PictureImage from "./assets/icons/icons8-câmera-100.png";
 import brasilImage from "./assets/secoes/brasil.jpg";
@@ -33,9 +32,13 @@ import mpbImage from "./assets/videos/mpb.gif";
 import powerrockImage from "./assets/videos/powerrock.gif";
 import rockgauchoImage from "./assets/videos/rockgaucho.gif";
 
+//img Musicbar
+import ArcticMonkeysImage from "./assets/musicbar/arcticmonkeys.jpg";
+
 //icons
 import homeImage from "./assets/icons/icons8-casa-50.png";
 import libraryImage from "./assets/icons/library.png";
+import playImage from "./assets/icons/play.png";
 import searchImage from "./assets/icons/search.png";
 
 import { styles } from "./styles";
@@ -154,6 +157,20 @@ const Radioimg = () => {
   return <Image source={radio} style={styles.imgsection} />;
 };
 
+//icons
+const Play = () => {
+  return <Image source={playImage} style={styles.iconMusicbar} />;
+};
+
+// MusicBar
+const ArcticMonkeysMusic = () => {
+  return (
+    <View>
+      <Image source={ArcticMonkeysImage} style={styles.Musicbarcd} />
+    </View>
+  );
+};
+
 export default function App() {
   return (
     <View style={styles.screen}>
@@ -248,8 +265,17 @@ export default function App() {
           </View>
         </View>
       </ScrollView>
-
-      {/* Footer fixo abaixo do ScrollView */}
+      <View style={styles.Musicbar}>
+        <View style={styles.containerMusicbar}>
+          <ArcticMonkeysMusic />
+          <Text style={styles.textMusicbar}>
+            {"Teddy Picker \nArtic Monkeys"}
+          </Text>
+          <View>
+            <Play />
+          </View>
+        </View>
+      </View>
       <View style={styles.footer}>
         <Home />
         <Search />

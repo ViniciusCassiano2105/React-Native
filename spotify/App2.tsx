@@ -39,9 +39,13 @@ import PlaylistEdguyImage from "./assets/playslisthisisedguy.jpg";
 import PlaylistMusicaPopularCaicaraImage from "./assets/playslistmusicapopularcaiçara.jpg.png";
 import PlaylistRockAcusticoImage from "./assets/playslistrockacustico.jpg";
 
+//img Musicbar
+import ArcticMonkeysImage from "./assets/musicbar/arcticmonkeys.jpg";
+
 //icons
 import homeImage from "./assets/icons/icons8-casa-50.png";
 import libraryImage from "./assets/icons/library.png";
+import playImage from "./assets/icons/play.png";
 import searchImage from "./assets/icons/search.png";
 
 import { styles } from "./styles";
@@ -200,9 +204,7 @@ const PlaylistCapitalInicialMusic = () => {
   return (
     <View>
       <Image source={PlaylistCapitalInicialImage} style={styles.imgStation} />
-      <Text style={styles.textPlaylistScroll}>
-        {"Linkin Park, 3 Doors Down, \nGodsmack, Hoobastank..."}
-      </Text>
+      <Text style={styles.textPlaylistScroll}>{"Capital Inicial 4.0"}</Text>
     </View>
   );
 };
@@ -224,7 +226,7 @@ const PlaylistMusicaPopularCaicaraMusic = () => {
         style={styles.imgStation}
       />
       <Text style={styles.textPlaylistScroll}>
-        {"Arctic Monkeys, The Kooks, \nWeezer, Oasis, Stereophoni..."}
+        {"Musica Popular Caiçara \n(Ao Vivo)"}
       </Text>
     </View>
   );
@@ -234,7 +236,7 @@ const Playlist90rockAnthesMusic = () => {
     <View>
       <Image source={Playlist90rockAnthesImage} style={styles.imgStation} />
       <Text style={styles.textPlaylistScroll}>
-        {"Arctic Monkeys, The Kooks, \nWeezer, Oasis, Stereophoni..."}
+        {"Green Day, Muse, Red\nHot Chili Peppers, Evan..."}
       </Text>
     </View>
   );
@@ -244,7 +246,7 @@ const Playlist90acousticMusic = () => {
     <View>
       <Image source={Playlist90acousticImage} style={styles.imgStation} />
       <Text style={styles.textPlaylistScroll}>
-        {"Arctic Monkeys, The Kooks, \nWeezer, Oasis, Stereophoni..."}
+        {"Counting Crowns, Pearl Jam, \nR.E.M., The Verve, Extreme..."}
       </Text>
     </View>
   );
@@ -254,7 +256,7 @@ const PlaylistRockAcusticoMusic = () => {
     <View>
       <Image source={PlaylistRockAcusticoImage} style={styles.imgStation} />
       <Text style={styles.textPlaylistScroll}>
-        {"Arctic Monkeys, The Kooks, \nWeezer, Oasis, Stereophoni..."}
+        {"Stone Sour, Foo Fighters, \nNirvana, Eddie Vedder,..."}
       </Text>
     </View>
   );
@@ -281,6 +283,18 @@ const Library = () => {
     <View style={styles.iconContainer}>
       <Image source={libraryImage} style={styles.icons} />
       <Text style={styles.texticons}>{"Biblioteca"}</Text>
+    </View>
+  );
+};
+const Play = () => {
+  return <Image source={playImage} style={styles.iconMusicbar} />;
+};
+
+// MusicBar
+const ArcticMonkeysMusic = () => {
+  return (
+    <View>
+      <Image source={ArcticMonkeysImage} style={styles.Musicbarcd} />
     </View>
   );
 };
@@ -346,7 +360,7 @@ export default function App() {
           </View>
         </View>
 
-        <View style={styles.allplayslists}>
+        <View>
           <Text style={styles.textStation}>Estações recomendadas</Text>
           <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
             <RadioAlterBridgeMusic />
@@ -359,7 +373,7 @@ export default function App() {
           </ScrollView>
         </View>
 
-        <View style={styles.allplayslists}>
+        <View>
           <Text style={styles.textStation}>Suas músicas estão com saudade</Text>
           <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
             <Playlist90RockDriveMusic />
@@ -372,6 +386,17 @@ export default function App() {
           </ScrollView>
         </View>
       </ScrollView>
+      <View style={styles.Musicbar}>
+        <View style={styles.containerMusicbar}>
+          <ArcticMonkeysMusic />
+          <Text style={styles.textMusicbar}>
+            {"Teddy Picker \nArtic Monkeys"}
+          </Text>
+          <View>
+            <Play />
+          </View>
+        </View>
+      </View>
       <View style={styles.footer}>
         <Home />
         <Search />

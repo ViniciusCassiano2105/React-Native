@@ -179,6 +179,48 @@ export const styles = StyleSheet.create({
     height: 150,
   },
 
+  Musicbar: {
+    width: "97%",
+    height: 50,
+    position: "absolute",
+    right:5,
+    borderRadius:5,
+    bottom: 120,
+    backgroundColor: "#6B1F28",
+    justifyContent: "center",
+    alignSelf: "center",
+  
+  },
+
+  containerMusicbar:{
+    marginLeft:8,
+    flexDirection:"row"
+  },
+
+  Musicbarcd:{
+    width: 40,
+    height:40,
+    borderRadius:4,
+  
+
+  },
+
+  textMusicbar:{
+  color:"#FFFFFF",
+  fontWeight:"400",
+  paddingTop:2,
+  paddingLeft:5
+  },
+
+  iconMusicbar:{
+    position:"relative",
+    top:10,
+    left:180,
+    right:10,
+    width: 20,
+    height:20
+  },
+        
   footer: {
     position: "absolute",
     bottom: 0,
@@ -309,26 +351,26 @@ export const styles = StyleSheet.create({
 
   imgsection: {
     width: 180,
-    height: 100, // A imagem ocupará toda a altura da div
+    height: 100, 
     borderRadius: 4,
-    objectFit: "cover", // Isto ajuda a manter a imagem coberta sem distorção, se necessário
+    objectFit: "cover", 
   },
 
   allsection: {
-    flexDirection: "row", // Organiza os itens horizontalmente
-    flexWrap: "wrap", // Permite quebrar para a próxima linha
-    marginLeft: 10, // Espaço à esquerda do contêiner
+    flexDirection: "row", 
+    flexWrap: "wrap", 
+    marginLeft: 10,
   },
 
   section: {
-    // Espaço entre os itens
-    width: "50%", // Ajuste para caber duas colunas (50% cada, com margem)
-    height: 105, // Altura fixa para cada imagem
-    overflow: "hidden", // Garante que a imagem não ultrapasse os limites da div
-    marginBottom: 10, // Espaço entre as linhas de imagens
+    
+    width: "50%",
+    height: 105, 
+    overflow: "hidden", 
+    marginBottom: 10, 
   },
   scrollView: {
-    flex: 1, // Faz com que o ScrollView ocupe todo o espaço disponível
-    paddingBottom: 20, // Pode adicionar um pequeno padding no final
+    flex: 1, 
+    paddingBottom: 20,
   },
 });
