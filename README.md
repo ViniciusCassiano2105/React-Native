@@ -31,9 +31,10 @@ O objetivo deste projeto é clonar duas telas do aplicativo Spotify, mantendo o 
 - Scrolling horizontal para as listas de estações e playlists.
 - Estilo responsivo e adaptável.
 
-- ## Telas Clonadas
-  ![spotify1](spotify1.jpg)
-  ![spotify2](spotify2.jpg)
+## Telas Clonadas
+
+<img src="spotify1.jpg" alt="spotify1" height="600" />
+<img src="spotify2.jpg" alt="spotify2" height="600"/>
 
 ## Como Executar o Projeto
 
