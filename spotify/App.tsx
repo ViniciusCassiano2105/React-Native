@@ -1,14 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   Image,
   SafeAreaView,
   ScrollView,
   Text,
   TextInput,
-  View,
   TouchableOpacity,
+  View,
 } from "react-native";
-
 
 import MyProfileImage from "./assets/eu.jpg";
 import PictureImage from "./assets/icons/icons8-câmera-100.png";
@@ -38,16 +37,14 @@ import rockgauchoImage from "./assets/videos/rockgaucho.gif";
 import ArcticMonkeysImage from "./assets/musicbar/arcticmonkeys.jpg";
 
 //icons
+import checkImage from "./assets/icons/check.png";
+import deviceImage from "./assets/icons/device.png";
 import homeImage from "./assets/icons/icons8-casa-50.png";
 import libraryImage from "./assets/icons/library.png";
 import playImage from "./assets/icons/play.png";
 import searchImage from "./assets/icons/search.png";
-import checkImage from "./assets/icons/check.png";
-import deviceImage from "./assets/icons/device.png";
 
 import { styles } from "./styles";
-import changeNavigationBarColor from "react-native-navigation-bar-color";
-
 
 const ProfileImage = () => {
   return (
@@ -58,9 +55,11 @@ const ProfileImage = () => {
 };
 
 const PictureImageHead = () => {
-  return <TouchableOpacity>
-    <Image source={PictureImage} style={styles.pictureImage} />
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity>
+      <Image source={PictureImage} style={styles.pictureImage} />
+    </TouchableOpacity>
+  );
 };
 
 const GifPowerrock = () => {
@@ -117,109 +116,153 @@ const Library = () => {
 };
 
 const Musicaimg = () => {
-  return <TouchableOpacity>
-    <Image source={musica} style={styles.imgsection} />
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity>
+      <Image source={musica} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
 };
 const Brasilimg = () => {
-  return <TouchableOpacity>
-    <Image source={brasilImage} style={styles.imgsection} />
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity>
+      <Image source={brasilImage} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
 };
 const Eventosimg = () => {
-  return <TouchableOpacity>
-    <Image source={eventosImage} style={styles.imgsection} />
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity>
+      <Image source={eventosImage} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
 };
 const Feitospravcimg = () => {
-  return <TouchableOpacity>
-    <Image source={feitopravc} style={styles.imgsection} />
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity>
+      <Image source={feitopravc} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
 };
 const Lancamentoimg = () => {
-  return <TouchableOpacity>
-    <Image source={lancamento} style={styles.imgsection} />
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity>
+      <Image source={lancamento} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
 };
 const Mariliaimg = () => {
-  return <TouchableOpacity>
-    <Image source={marilia} style={styles.imgsection} />
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity>
+      <Image source={marilia} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
 };
 const Podcastsimg = () => {
-  return <TouchableOpacity>
-    <Image source={podcasts} style={styles.imgsection} />
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity>
+      <Image source={podcasts} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
 };
 const Paradasimg = () => {
-  return <TouchableOpacity>
-    <Image source={paradas} style={styles.imgsection} />
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity>
+      <Image source={paradas} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
 };
 const Popimg = () => {
-  return <TouchableOpacity>
-    <Image source={pop} style={styles.imgsection} />
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity>
+      <Image source={pop} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
 };
 const Lancamentosimg = () => {
-  return <Image source={lancamentos} style={styles.imgsection} />;
+  return (
+    <TouchableOpacity>
+      <Image source={lancamentos} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
 };
 const HipHopimg = () => {
-  return <TouchableOpacity>
-    <Image source={hiphop} style={styles.imgsection} />
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity>
+      <Image source={hiphop} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
 };
 const Originaisimg = () => {
-  return <TouchableOpacity>
-    <Image source={originaisspotify} style={styles.imgsection} />
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity>
+      <Image source={originaisspotify} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
 };
 const Paradas2img = () => {
-  return <TouchableOpacity>
-    <Image source={paradas2} style={styles.imgsection} />
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity>
+      <Image source={paradas2} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
 };
 const Nocarroimg = () => {
-  return <TouchableOpacity>
-    <Image source={nocarro} style={styles.imgsection} />
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity>
+      <Image source={nocarro} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
 };
 const Funkimg = () => {
-  return <TouchableOpacity>
-    <Image source={funk} style={styles.imgsection} />
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity>
+      <Image source={funk} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
 };
 const SambaPagodeimg = () => {
-  return <TouchableOpacity>
-    <Image source={sambapagode} style={styles.imgsection} />
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity>
+      <Image source={sambapagode} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
 };
 const Descobririmg = () => {
-  return <TouchableOpacity>
-    <Image source={descobrir} style={styles.imgsection} />
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity>
+      <Image source={descobrir} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
 };
 const Radioimg = () => {
-  return <TouchableOpacity>
-    <Image source={radio} style={styles.imgsection} />
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity>
+      <Image source={radio} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
 };
 
 //icons
 const Play = () => {
-  return <TouchableOpacity>
-    <Image source={playImage} style={styles.iconMusicbar} />
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity>
+      <Image source={playImage} style={styles.iconMusicbar} />
+    </TouchableOpacity>
+  );
 };
 const Device = () => {
-  return <TouchableOpacity>
-    <Image source={deviceImage} style={styles.iconMusicbar} />
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity>
+      <Image source={deviceImage} style={styles.iconMusicbar} />
+    </TouchableOpacity>
+  );
 };
 const Check = () => {
-  return <TouchableOpacity>
-    <Image source={checkImage} style={styles.iconMusicbar} />
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity>
+      <Image source={checkImage} style={styles.iconMusicbar} />
+    </TouchableOpacity>
+  );
 };
 
 // MusicBar
