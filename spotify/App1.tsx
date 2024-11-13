@@ -43,6 +43,8 @@ import PlaylistRockAcusticoImage from "./assets/playslistrockacustico.jpg";
 import ArcticMonkeysImage from "./assets/musicbar/arcticmonkeys.jpg";
 
 //icons
+import checkImage from "./assets/icons/check.png";
+import deviceImage from "./assets/icons/device.png";
 import homeImage from "./assets/icons/icons8-casa-50.png";
 import libraryImage from "./assets/icons/library.png";
 import playImage from "./assets/icons/play.png";
@@ -272,7 +274,7 @@ const Home = () => {
 };
 const Search = () => {
   return (
-    <View style={styles.iconContainer}>
+    <View style={styles.iconsearch}>
       <Image source={searchImage} style={styles.icons} />
       <Text style={styles.texticons}>{"Buscar"}</Text>
     </View>
@@ -287,7 +289,19 @@ const Library = () => {
   );
 };
 const Play = () => {
-  return <Image source={playImage} style={styles.iconMusicbar} />;
+  return <TouchableOpacity>
+    <Image source={playImage} style={styles.iconMusicbar} />
+  </TouchableOpacity>;
+};
+const Device = () => {
+  return <TouchableOpacity>
+    <Image source={deviceImage} style={styles.iconMusicbar} />
+  </TouchableOpacity>;
+};
+const Check = () => {
+  return <TouchableOpacity>
+    <Image source={checkImage} style={styles.iconMusicbar} />
+  </TouchableOpacity>;
 };
 
 // MusicBar
@@ -363,26 +377,54 @@ export default function App() {
         <View>
           <Text style={styles.textStation}>Estações recomendadas</Text>
           <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-            <RadioAlterBridgeMusic />
-            <RadioAudioslaveMusic />
-            <RadioChrisCornellMusic />
-            <RadioEdguyMusic />
-            <RadioFooFightersMusic />
-            <RadioPearlJamMusic />
-            <RadioStrokesMusic />
+            <TouchableOpacity>
+              <RadioAlterBridgeMusic />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <RadioAudioslaveMusic />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <RadioChrisCornellMusic />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <RadioEdguyMusic />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <RadioFooFightersMusic />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <RadioPearlJamMusic />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <RadioStrokesMusic />
+            </TouchableOpacity>
           </ScrollView>
         </View>
 
-        <View>
+        <View style={styles.card2}>
           <Text style={styles.textStation}>Suas músicas estão com saudade</Text>
           <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-            <Playlist90RockDriveMusic />
-            <PlaylistCapitalInicialMusic />
-            <PlaylistEdguyMusic />
-            <PlaylistMusicaPopularCaicaraMusic />
-            <Playlist90rockAnthesMusic />
-            <Playlist90acousticMusic />
-            <PlaylistRockAcusticoMusic />
+            <TouchableOpacity>
+              <Playlist90RockDriveMusic />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <PlaylistCapitalInicialMusic />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <PlaylistEdguyMusic />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <PlaylistMusicaPopularCaicaraMusic />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Playlist90rockAnthesMusic />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Playlist90acousticMusic />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <PlaylistRockAcusticoMusic />
+            </TouchableOpacity>
           </ScrollView>
         </View>
       </ScrollView>
@@ -392,15 +434,23 @@ export default function App() {
           <Text style={styles.textMusicbar}>
             {"Teddy Picker \nArtic Monkeys"}
           </Text>
-          <View>
+          <View style={styles.alliconsMusicbar}>
+            <Device />
+            <Check />
             <Play />
           </View>
         </View>
       </View>
       <View style={styles.footer}>
-        <Home />
-        <Search />
-        <Library />
+        <TouchableOpacity>
+          <Home />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Search />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Library />
+        </TouchableOpacity>
       </View>
     </View>
   );

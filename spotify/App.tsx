@@ -6,6 +6,7 @@ import {
   Text,
   TextInput,
   View,
+  TouchableOpacity,
 } from "react-native";
 
 import MyProfileImage from "./assets/eu.jpg";
@@ -40,6 +41,8 @@ import homeImage from "./assets/icons/icons8-casa-50.png";
 import libraryImage from "./assets/icons/library.png";
 import playImage from "./assets/icons/play.png";
 import searchImage from "./assets/icons/search.png";
+import checkImage from "./assets/icons/check.png";
+import deviceImage from "./assets/icons/device.png";
 
 import { styles } from "./styles";
 
@@ -52,28 +55,36 @@ const ProfileImage = () => {
 };
 
 const PictureImageHead = () => {
-  return <Image source={PictureImage} style={styles.pictureImage} />;
+  return <TouchableOpacity>
+    <Image source={PictureImage} style={styles.pictureImage} />
+  </TouchableOpacity>;
 };
 
 const GifPowerrock = () => {
   return (
-    <View style={styles.gifcontainer}>
-      <Image source={powerrockImage} style={styles.gifpower} />
-    </View>
+    <TouchableOpacity>
+      <View style={styles.gifcontainer}>
+        <Image source={powerrockImage} style={styles.gifpower} />
+      </View>
+    </TouchableOpacity>
   );
 };
 const GifRockGaucho = () => {
   return (
-    <View style={styles.gifcontainer}>
-      <Image source={rockgauchoImage} style={styles.gifgaucho} />
-    </View>
+    <TouchableOpacity>
+      <View style={styles.gifcontainer}>
+        <Image source={rockgauchoImage} style={styles.gifgaucho} />
+      </View>
+    </TouchableOpacity>
   );
 };
 const GifMpb = () => {
   return (
-    <View style={styles.gifcontainer}>
-      <Image source={mpbImage} style={styles.gifmpb} />
-    </View>
+    <TouchableOpacity>
+      <View style={styles.gifcontainer}>
+        <Image source={mpbImage} style={styles.gifmpb} />
+      </View>
+    </TouchableOpacity>
   );
 };
 
@@ -87,7 +98,7 @@ const Home = () => {
 };
 const Search = () => {
   return (
-    <View style={styles.iconContainer}>
+    <View style={styles.iconsearch}>
       <Image source={searchImage} style={styles.icons} />
       <Text style={styles.texticons}>{"Buscar"}</Text>
     </View>
@@ -103,63 +114,109 @@ const Library = () => {
 };
 
 const Musicaimg = () => {
-  return <Image source={musica} style={styles.imgsection} />;
+  return <TouchableOpacity>
+    <Image source={musica} style={styles.imgsection} />
+  </TouchableOpacity>;
 };
 const Brasilimg = () => {
-  return <Image source={brasilImage} style={styles.imgsection} />;
+  return <TouchableOpacity>
+    <Image source={brasilImage} style={styles.imgsection} />
+  </TouchableOpacity>;
 };
 const Eventosimg = () => {
-  return <Image source={eventosImage} style={styles.imgsection} />;
+  return <TouchableOpacity>
+    <Image source={eventosImage} style={styles.imgsection} />
+  </TouchableOpacity>;
 };
 const Feitospravcimg = () => {
-  return <Image source={feitopravc} style={styles.imgsection} />;
+  return <TouchableOpacity>
+    <Image source={feitopravc} style={styles.imgsection} />
+  </TouchableOpacity>;
 };
 const Lancamentoimg = () => {
-  return <Image source={lancamento} style={styles.imgsection} />;
+  return <TouchableOpacity>
+    <Image source={lancamento} style={styles.imgsection} />
+  </TouchableOpacity>;
 };
 const Mariliaimg = () => {
-  return <Image source={marilia} style={styles.imgsection} />;
+  return <TouchableOpacity>
+    <Image source={marilia} style={styles.imgsection} />
+  </TouchableOpacity>;
 };
 const Podcastsimg = () => {
-  return <Image source={podcasts} style={styles.imgsection} />;
+  return <TouchableOpacity>
+    <Image source={podcasts} style={styles.imgsection} />
+  </TouchableOpacity>;
 };
 const Paradasimg = () => {
-  return <Image source={paradas} style={styles.imgsection} />;
+  return <TouchableOpacity>
+    <Image source={paradas} style={styles.imgsection} />
+  </TouchableOpacity>;
 };
 const Popimg = () => {
-  return <Image source={pop} style={styles.imgsection} />;
+  return <TouchableOpacity>
+    <Image source={pop} style={styles.imgsection} />
+  </TouchableOpacity>;
 };
 const Lancamentosimg = () => {
   return <Image source={lancamentos} style={styles.imgsection} />;
 };
 const HipHopimg = () => {
-  return <Image source={hiphop} style={styles.imgsection} />;
+  return <TouchableOpacity>
+    <Image source={hiphop} style={styles.imgsection} />
+  </TouchableOpacity>;
 };
 const Originaisimg = () => {
-  return <Image source={originaisspotify} style={styles.imgsection} />;
+  return <TouchableOpacity>
+    <Image source={originaisspotify} style={styles.imgsection} />
+  </TouchableOpacity>;
 };
 const Paradas2img = () => {
-  return <Image source={paradas2} style={styles.imgsection} />;
+  return <TouchableOpacity>
+    <Image source={paradas2} style={styles.imgsection} />
+  </TouchableOpacity>;
 };
 const Nocarroimg = () => {
-  return <Image source={nocarro} style={styles.imgsection} />;
+  return <TouchableOpacity>
+    <Image source={nocarro} style={styles.imgsection} />
+  </TouchableOpacity>;
 };
 const Funkimg = () => {
-  return <Image source={funk} style={styles.imgsection} />;
+  return <TouchableOpacity>
+    <Image source={funk} style={styles.imgsection} />
+  </TouchableOpacity>;
 };
 const SambaPagodeimg = () => {
-  return <Image source={sambapagode} style={styles.imgsection} />;
+  return <TouchableOpacity>
+    <Image source={sambapagode} style={styles.imgsection} />
+  </TouchableOpacity>;
 };
 const Descobririmg = () => {
-  return <Image source={descobrir} style={styles.imgsection} />;
+  return <TouchableOpacity>
+    <Image source={descobrir} style={styles.imgsection} />
+  </TouchableOpacity>;
 };
 const Radioimg = () => {
-  return <Image source={radio} style={styles.imgsection} />;
+  return <TouchableOpacity>
+    <Image source={radio} style={styles.imgsection} />
+  </TouchableOpacity>;
 };
 
 //icons
 const Play = () => {
-  return <Image source={playImage} style={styles.iconMusicbar} />;
+  return <TouchableOpacity>
+    <Image source={playImage} style={styles.iconMusicbar} />
+  </TouchableOpacity>;
+};
+const Device = () => {
+  return <TouchableOpacity>
+    <Image source={deviceImage} style={styles.iconMusicbar} />
+  </TouchableOpacity>;
+};
+const Check = () => {
+  return <TouchableOpacity>
+    <Image source={checkImage} style={styles.iconMusicbar} />
+  </TouchableOpacity>;
 };
 
 // MusicBar
@@ -187,7 +244,6 @@ export default function App() {
       </SafeAreaView>
 
       <ScrollView>
-        {/* Campo de busca */}
         <View style={styles.containerimput}>
           <View style={styles.searchContainer}>
             <TextInput
@@ -197,16 +253,14 @@ export default function App() {
             />
           </View>
         </View>
-
         <View style={styles.explore}>
-          <Text style={styles.textgeneros}>Explore seus gêneros</Text>
+          <Text style={styles.textgeneros1}>Explore seus gêneros</Text>
           <View style={styles.allgifs}>
             <GifPowerrock />
             <GifRockGaucho />
             <GifMpb />
           </View>
-
-          <Text style={styles.textgeneros}>Navegar por todas as seções</Text>
+          <Text style={styles.textgeneros2}>Navegar por todas as seções</Text>
           <View style={styles.allsection}>
             <View style={styles.section}>
               <Musicaimg />
@@ -271,15 +325,23 @@ export default function App() {
           <Text style={styles.textMusicbar}>
             {"Teddy Picker \nArtic Monkeys"}
           </Text>
-          <View>
+          <View style={styles.alliconsMusicbar}>
+            <Device />
+            <Check />
             <Play />
           </View>
         </View>
       </View>
       <View style={styles.footer}>
-        <Home />
-        <Search />
-        <Library />
+        <TouchableOpacity>
+          <Home />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Search />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Library />
+        </TouchableOpacity>
       </View>
     </View>
   );

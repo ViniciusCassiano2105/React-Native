@@ -179,53 +179,59 @@ export const styles = StyleSheet.create({
     height: 150,
   },
 
+  card2: {
+    paddingBottom: 130,
+  },
+
   Musicbar: {
     width: "97%",
-    height: 50,
+    height: 60,
     position: "absolute",
-    right:5,
-    borderRadius:5,
-    bottom: 120,
+    right: 5,
+    borderRadius: 5,
+    bottom: 110,
     backgroundColor: "#6B1F28",
     justifyContent: "center",
     alignSelf: "center",
-  
   },
 
-  containerMusicbar:{
-    marginLeft:8,
-    flexDirection:"row"
+  containerMusicbar: {
+    marginLeft: 8,
+    flexDirection: "row",
   },
 
-  Musicbarcd:{
-    width: 40,
-    height:40,
-    borderRadius:4,
-  
-
+  Musicbarcd: {
+    width: 50,
+    height: 50,
+    borderRadius: 4,
   },
 
-  textMusicbar:{
-  color:"#FFFFFF",
-  fontWeight:"400",
-  paddingTop:2,
-  paddingLeft:5
+  textMusicbar: {
+    color: "#FFFFFF",
+    fontWeight: "400",
+    paddingTop: 5,
+    paddingLeft: 5,
   },
 
-  iconMusicbar:{
-    position:"relative",
-    top:10,
-    left:180,
-    right:10,
-    width: 20,
-    height:20
+  alliconsMusicbar: {
+    flexDirection: "row",
   },
-        
+
+  iconMusicbar: {
+    position: "relative",
+    marginLeft: 15,
+    top: 13,
+    left: 97,
+    right: 10,
+    width: 24,
+    height: 24,
+  },
+
   footer: {
     position: "absolute",
     bottom: 0,
     width: "100%",
-    height: 120,
+    height: 110,
     flexDirection: "row",
     justifyContent: "center",
     paddingBottom: 15,
@@ -235,14 +241,23 @@ export const styles = StyleSheet.create({
 
   iconContainer: {
     alignItems: "center",
-    marginVertical: 25,
-    marginHorizontal: 35,
+    marginVertical: 17,
+    marginHorizontal: 37,
   },
 
   icons: {
-    width: 25,
-    height: 25,
+    width: 28,
+    height: 28,
   },
+
+  iconsearch: {
+    alignItems: "center",
+    marginVertical: 17,
+    marginHorizontal: 37,
+    position: "relative",
+    left: 5,
+  },
+
   texticons: {
     position: "relative",
     textAlign: "center",
@@ -298,6 +313,8 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 5,
     paddingHorizontal: 10,
+    position: "relative",
+    bottom: 10,
   },
   gifcontainer: {
     width: 116,
@@ -307,42 +324,56 @@ export const styles = StyleSheet.create({
   },
 
   explore: {
-    paddingVertical: 170,
+    paddingVertical: 150,
   },
 
-  textgeneros: {
-    fontSize: 17,
+  textgeneros1: {
+    position: "relative",
+    top: 25,
+    fontSize: 16,
     paddingVertical: 30,
     paddingHorizontal: 12,
     color: "#FFFFFF",
     fontWeight: "bold",
   },
+  textgeneros2: {
+    position: "relative",
+    bottom: 12,
+    fontSize: 16,
+    paddingVertical: 30,
+    paddingHorizontal: 12,
+    color: "#FFFFFF",
+    fontWeight: "bold",
+  },
+
   allgifs: {
     flexDirection: "row",
     justifyContent: "space-between",
     marginHorizontal: 10,
+    position: "relative",
+    top: 10,
   },
 
   gifpower: {
     width: "100%",
-    height: "106%",
-    bottom:15
+    height: "115%",
+    position: "relative",
+    bottom: 27,
   },
 
-  gifgaucho:{
+  gifgaucho: {
     width: "100%",
-    height: "110%",
-    position:"relative",
-    bottom:27
+    height: "115%",
+    position: "relative",
+    bottom: 30,
   },
 
-  gifmpb:{
+  gifmpb: {
     width: "100%",
-    height: "112%",
-    position:"relative",
-    bottom:33
+    height: "115%",
+    position: "relative",
+    bottom: 33,
   },
-  
 
   gif: {
     width: "100%",
@@ -351,26 +382,27 @@ export const styles = StyleSheet.create({
 
   imgsection: {
     width: 180,
-    height: 100, 
+    height: 100,
     borderRadius: 4,
-    objectFit: "cover", 
+    objectFit: "cover",
   },
 
   allsection: {
-    flexDirection: "row", 
-    flexWrap: "wrap", 
+    flexDirection: "row",
+    flexWrap: "wrap",
     marginLeft: 10,
+    position: "relative",
+    bottom: 30,
   },
 
   section: {
-    
     width: "50%",
-    height: 105, 
-    overflow: "hidden", 
-    marginBottom: 10, 
+    height: 105,
+    overflow: "hidden",
+    marginBottom: 10,
   },
   scrollView: {
-    flex: 1, 
-    paddingBottom: 20,
+    flex: 1,
+    paddingBottom: 25,
   },
 });
