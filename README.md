@@ -33,9 +33,19 @@ O objetivo deste projeto é clonar duas telas do aplicativo Spotify, mantendo o 
 
 ## Telas Clonadas
 
-<img src="spotify1.jpg" alt="spotify1" height="600" />
-<img src="spotify2.jpg" alt="spotify2" height="600"/>
+### Parte 1
 
+| Tela Original 1                                | Tela Clone 1                                |
+|------------------------------------------------|---------------------------------------------|
+| <img src="spotify1.jpg" alt="spotify1" height="600" /> | <img src="clone1.jpg" alt="clone1" height="600" /> |
+
+---
+
+### Parte 2
+
+| Tela Original 2                                | Tela Clone 2                                |
+|------------------------------------------------|---------------------------------------------|
+| <img src="spotify2.jpg" alt="spotify2" height="600" /> | <img src="clone2.jpg" alt="clone2" height="600" /> |
 ## Como Executar o Projeto
 
 1. Clone o repositório:
