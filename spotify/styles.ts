@@ -185,11 +185,11 @@ export const styles = StyleSheet.create({
 
   Musicbar: {
     width: "97%",
-    height: 60,
+    height: 55,
     position: "absolute",
     right: 5,
     borderRadius: 5,
-    bottom: 110,
+    bottom: 100,
     backgroundColor: "#6B1F28",
     justifyContent: "center",
     alignSelf: "center",
@@ -201,15 +201,15 @@ export const styles = StyleSheet.create({
   },
 
   Musicbarcd: {
-    width: 50,
-    height: 50,
+    width: 40,
+    height: 40,
     borderRadius: 4,
   },
 
   textMusicbar: {
     color: "#FFFFFF",
     fontWeight: "400",
-    paddingTop: 5,
+    paddingTop: 2,
     paddingLeft: 5,
   },
 
@@ -220,8 +220,8 @@ export const styles = StyleSheet.create({
   iconMusicbar: {
     position: "relative",
     marginLeft: 15,
-    top: 13,
-    left: 97,
+    top: 9,
+    left: 100,
     right: 10,
     width: 24,
     height: 24,
@@ -231,7 +231,7 @@ export const styles = StyleSheet.create({
     position: "absolute",
     bottom: 0,
     width: "100%",
-    height: 110,
+    height: 100,
     flexDirection: "row",
     justifyContent: "center",
     paddingBottom: 15,
