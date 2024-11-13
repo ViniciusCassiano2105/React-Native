@@ -4,40 +4,34 @@ import {
   SafeAreaView,
   ScrollView,
   Text,
+  TextInput,
   TouchableOpacity,
   View,
 } from "react-native";
 
-//img Profile
 import MyProfileImage from "./assets/eu.jpg";
-
-//Img cards
-import AliceInChainsImage from "./assets/aliceinchains.jpg";
-import AllenLandImage from "./assets/allenlande.jpg";
-import ArticMonkeysImage from "./assets/articmonkeys.jpg";
-import AudioslaveImage from "./assets/audioslave.jpg";
-import IncubusMusicImage from "./assets/incubus.jpg";
-import LinkinParkImage from "./assets/linkinpark.jpg";
-import FavMusicImage from "./assets/musicascurtidas.jpg";
-import RedHotMusicImage from "./assets/redhotchilipeppers.jpg";
-
-//Img Station
-import RadioAlterBridgeImage from "./assets/radioalterbridge.jpg";
-import RadioAudioslaveImage from "./assets/radioaudioslave.jpg";
-import RadioChrisCornellImage from "./assets/radiochriscornell.jpg";
-import RadioEdguyImage from "./assets/radioedguy.jpg";
-import RadioFooFightersImage from "./assets/radiofoofighters.jpg";
-import RadioPearlJamImage from "./assets/radiopearljam.jpg";
-import RadioStrokesImage from "./assets/radiostrokes.jpg";
-
-//img Playlists
-import Playlist90acousticImage from "./assets/playslist90sacoustic.jpg";
-import Playlist90rockAnthesImage from "./assets/playslist90srockanthes.jpg";
-import Playlist90RockDriveImage from "./assets/playslist90srockdrive.jpg";
-import PlaylistCapitalInicialImage from "./assets/playslistcapitalinicial.jpg";
-import PlaylistEdguyImage from "./assets/playslisthisisedguy.jpg";
-import PlaylistMusicaPopularCaicaraImage from "./assets/playslistmusicapopularcaiçara.jpg.png";
-import PlaylistRockAcusticoImage from "./assets/playslistrockacustico.jpg";
+import PictureImage from "./assets/icons/icons8-câmera-100.png";
+import brasilImage from "./assets/secoes/brasil.jpg";
+import descobrir from "./assets/secoes/descobrir.jpg";
+import eventosImage from "./assets/secoes/eventos.jpg";
+import feitopravc from "./assets/secoes/feitopravc.jpg";
+import funk from "./assets/secoes/funk.jpg";
+import hiphop from "./assets/secoes/hiphop.jpg";
+import lancamento from "./assets/secoes/lancamento.jpg";
+import lancamentos from "./assets/secoes/lancamentos.jpg";
+import marilia from "./assets/secoes/marilia.jpg";
+import musica from "./assets/secoes/musica.jpg";
+import nocarro from "./assets/secoes/nocarro.jpg";
+import originaisspotify from "./assets/secoes/originais.jpg";
+import paradas from "./assets/secoes/paradas.jpg";
+import paradas2 from "./assets/secoes/paradas2.jpg";
+import podcasts from "./assets/secoes/podcasts.jpg";
+import pop from "./assets/secoes/pop.jpg";
+import radio from "./assets/secoes/radio.jpg";
+import sambapagode from "./assets/secoes/sambapagode.jpg";
+import mpbImage from "./assets/videos/mpb.gif";
+import powerrockImage from "./assets/videos/powerrock.gif";
+import rockgauchoImage from "./assets/videos/rockgaucho.gif";
 
 //img Musicbar
 import ArcticMonkeysImage from "./assets/musicbar/arcticmonkeys.jpg";
@@ -59,208 +53,40 @@ const ProfileImage = () => {
     </View>
   );
 };
-//const cards
-const FavMusic = () => {
+
+const PictureImageHead = () => {
   return (
-    <View>
-      <Image source={FavMusicImage} style={styles.Musicimgleft} />
-    </View>
-  );
-};
-const IncubusMusic = () => {
-  return (
-    <View>
-      <Image source={IncubusMusicImage} style={styles.Musicimgright} />
-    </View>
-  );
-};
-const RedHotMusic = () => {
-  return (
-    <View>
-      <Image source={RedHotMusicImage} style={styles.Musicimgleft} />
-    </View>
-  );
-};
-const AudioslaveMusic = () => {
-  return (
-    <View>
-      <Image source={AudioslaveImage} style={styles.Musicimgright} />
-    </View>
-  );
-};
-const AliceInChainsMusic = () => {
-  return (
-    <View>
-      <Image source={AliceInChainsImage} style={styles.Musicimgright} />
-    </View>
-  );
-};
-const ArticMonkeysMusic = () => {
-  return (
-    <View>
-      <Image source={ArticMonkeysImage} style={styles.Musicimgright} />
-    </View>
+    <TouchableOpacity>
+      <Image source={PictureImage} style={styles.pictureImage} />
+    </TouchableOpacity>
   );
 };
 
-const AllenLandeMusic = () => {
+const GifPowerrock = () => {
   return (
-    <View>
-      <Image source={AllenLandImage} style={styles.Musicimgright} />
-    </View>
+    <TouchableOpacity>
+      <View style={styles.gifcontainer}>
+        <Image source={powerrockImage} style={styles.gifpower} />
+      </View>
+    </TouchableOpacity>
   );
 };
-
-const LinkinParkMusic = () => {
+const GifRockGaucho = () => {
   return (
-    <View>
-      <Image source={LinkinParkImage} style={styles.Musicimgright} />
-    </View>
+    <TouchableOpacity>
+      <View style={styles.gifcontainer}>
+        <Image source={rockgauchoImage} style={styles.gifgaucho} />
+      </View>
+    </TouchableOpacity>
   );
 };
-
-//const stations
-const RadioAlterBridgeMusic = () => {
+const GifMpb = () => {
   return (
-    <View>
-      <Image source={RadioAlterBridgeImage} style={styles.imgStation} />
-      <Text style={styles.textStationScroll}>
-        {"Staind, P.O.D, Puddle Of \nMudd, Rise Against,..."}
-      </Text>
-    </View>
-  );
-};
-const RadioAudioslaveMusic = () => {
-  return (
-    <View>
-      <Image source={RadioAudioslaveImage} style={styles.imgStation} />
-      <Text style={styles.textStationScroll}>
-        {"Red Hot Chili Peppers, \nRage Against The Machi..."}
-      </Text>
-    </View>
-  );
-};
-const RadioChrisCornellMusic = () => {
-  return (
-    <View>
-      <Image source={RadioChrisCornellImage} style={styles.imgStation} />
-      <Text style={styles.textStationScroll}>
-        {"Silverchair, Temple Of The \nDog, Mad Season,..."}
-      </Text>
-    </View>
-  );
-};
-const RadioEdguyMusic = () => {
-  return (
-    <View>
-      <Image source={RadioEdguyImage} style={styles.imgStation} />
-      <Text style={styles.textStationScroll}>
-        {"Place Vendome, Allen Lande \nIced Earth,..."}
-      </Text>
-    </View>
-  );
-};
-const RadioFooFightersMusic = () => {
-  return (
-    <View>
-      <Image source={RadioFooFightersImage} style={styles.imgStation} />
-      <Text style={styles.textStationScroll}>
-        {"The Strokes, Slipknot, Rise \nAgainst, Creed,..."}
-      </Text>
-    </View>
-  );
-};
-const RadioPearlJamMusic = () => {
-  return (
-    <View>
-      <Image source={RadioPearlJamImage} style={styles.imgStation} />
-      <Text style={styles.textStationScroll}>
-        {"Incubus, Bush, Silver Chair, \nTemple Of The Dog,..."}
-      </Text>
-    </View>
-  );
-};
-const RadioStrokesMusic = () => {
-  return (
-    <View>
-      <Image source={RadioStrokesImage} style={styles.imgStation} />
-      <Text style={styles.textStationScroll}>
-        {"Arctic Monkeys, The Kooks, \nWeezer, Oasis, Stereophoni..."}
-      </Text>
-    </View>
-  );
-};
-
-//const Playlists
-const Playlist90RockDriveMusic = () => {
-  return (
-    <View>
-      <Image source={Playlist90RockDriveImage} style={styles.imgStation} />
-      <Text style={styles.textPlaylistScroll}>
-        {"Radiohead Monkeys, Weezer, \nThe Smashing Pumpkins..."}
-      </Text>
-    </View>
-  );
-};
-const PlaylistCapitalInicialMusic = () => {
-  return (
-    <View>
-      <Image source={PlaylistCapitalInicialImage} style={styles.imgStation} />
-      <Text style={styles.textPlaylistScroll}>{"Capital Inicial 4.0"}</Text>
-    </View>
-  );
-};
-const PlaylistEdguyMusic = () => {
-  return (
-    <View>
-      <Image source={PlaylistEdguyImage} style={styles.imgStation} />
-      <Text style={styles.textPlaylistScroll}>
-        {"This is Edguy, Todos os\nmaiores hits em uma só..."}
-      </Text>
-    </View>
-  );
-};
-const PlaylistMusicaPopularCaicaraMusic = () => {
-  return (
-    <View>
-      <Image
-        source={PlaylistMusicaPopularCaicaraImage}
-        style={styles.imgStation}
-      />
-      <Text style={styles.textPlaylistScroll}>
-        {"Musica Popular Caiçara \n(Ao Vivo)"}
-      </Text>
-    </View>
-  );
-};
-const Playlist90rockAnthesMusic = () => {
-  return (
-    <View>
-      <Image source={Playlist90rockAnthesImage} style={styles.imgStation} />
-      <Text style={styles.textPlaylistScroll}>
-        {"Green Day, Muse, Red\nHot Chili Peppers, Evan..."}
-      </Text>
-    </View>
-  );
-};
-const Playlist90acousticMusic = () => {
-  return (
-    <View>
-      <Image source={Playlist90acousticImage} style={styles.imgStation} />
-      <Text style={styles.textPlaylistScroll}>
-        {"Counting Crowns, Pearl Jam, \nR.E.M., The Verve, Extreme..."}
-      </Text>
-    </View>
-  );
-};
-const PlaylistRockAcusticoMusic = () => {
-  return (
-    <View>
-      <Image source={PlaylistRockAcusticoImage} style={styles.imgStation} />
-      <Text style={styles.textPlaylistScroll}>
-        {"Stone Sour, Foo Fighters, \nNirvana, Eddie Vedder,..."}
-      </Text>
-    </View>
+    <TouchableOpacity>
+      <View style={styles.gifcontainer}>
+        <Image source={mpbImage} style={styles.gifmpb} />
+      </View>
+    </TouchableOpacity>
   );
 };
 
@@ -288,20 +114,155 @@ const Library = () => {
     </View>
   );
 };
+
+const Musicaimg = () => {
+  return (
+    <TouchableOpacity>
+      <Image source={musica} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
+};
+const Brasilimg = () => {
+  return (
+    <TouchableOpacity>
+      <Image source={brasilImage} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
+};
+const Eventosimg = () => {
+  return (
+    <TouchableOpacity>
+      <Image source={eventosImage} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
+};
+const Feitospravcimg = () => {
+  return (
+    <TouchableOpacity>
+      <Image source={feitopravc} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
+};
+const Lancamentoimg = () => {
+  return (
+    <TouchableOpacity>
+      <Image source={lancamento} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
+};
+const Mariliaimg = () => {
+  return (
+    <TouchableOpacity>
+      <Image source={marilia} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
+};
+const Podcastsimg = () => {
+  return (
+    <TouchableOpacity>
+      <Image source={podcasts} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
+};
+const Paradasimg = () => {
+  return (
+    <TouchableOpacity>
+      <Image source={paradas} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
+};
+const Popimg = () => {
+  return (
+    <TouchableOpacity>
+      <Image source={pop} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
+};
+const Lancamentosimg = () => {
+  return (
+    <TouchableOpacity>
+      <Image source={lancamentos} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
+};
+const HipHopimg = () => {
+  return (
+    <TouchableOpacity>
+      <Image source={hiphop} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
+};
+const Originaisimg = () => {
+  return (
+    <TouchableOpacity>
+      <Image source={originaisspotify} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
+};
+const Paradas2img = () => {
+  return (
+    <TouchableOpacity>
+      <Image source={paradas2} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
+};
+const Nocarroimg = () => {
+  return (
+    <TouchableOpacity>
+      <Image source={nocarro} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
+};
+const Funkimg = () => {
+  return (
+    <TouchableOpacity>
+      <Image source={funk} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
+};
+const SambaPagodeimg = () => {
+  return (
+    <TouchableOpacity>
+      <Image source={sambapagode} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
+};
+const Descobririmg = () => {
+  return (
+    <TouchableOpacity>
+      <Image source={descobrir} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
+};
+const Radioimg = () => {
+  return (
+    <TouchableOpacity>
+      <Image source={radio} style={styles.imgsection} />
+    </TouchableOpacity>
+  );
+};
+
+//icons
 const Play = () => {
-  return <TouchableOpacity>
-    <Image source={playImage} style={styles.iconMusicbar} />
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity>
+      <Image source={playImage} style={styles.iconMusicbar} />
+    </TouchableOpacity>
+  );
 };
 const Device = () => {
-  return <TouchableOpacity>
-    <Image source={deviceImage} style={styles.iconMusicbar} />
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity>
+      <Image source={deviceImage} style={styles.iconMusicbar} />
+    </TouchableOpacity>
+  );
 };
 const Check = () => {
-  return <TouchableOpacity>
-    <Image source={checkImage} style={styles.iconMusicbar} />
-  </TouchableOpacity>;
+  return (
+    <TouchableOpacity>
+      <Image source={checkImage} style={styles.iconMusicbar} />
+    </TouchableOpacity>
+  );
 };
 
 // MusicBar
@@ -320,112 +281,88 @@ export default function App() {
         <View style={styles.box}>
           <View style={styles.boxButton}>
             <ProfileImage />
-            <View style={styles.buttonTudo}>
-              <TouchableOpacity>
-                <Text style={styles.textButton}>Tudo</Text>
-              </TouchableOpacity>
-            </View>
-            <View style={styles.buttonMusica}>
-              <TouchableOpacity>
-                <Text style={styles.textButton}>Música</Text>
-              </TouchableOpacity>
-            </View>
-            <View style={styles.buttonPodcasts}>
-              <TouchableOpacity>
-                <Text style={styles.textButton}>Podcasts</Text>
-              </TouchableOpacity>
+            <View style={styles.buscar}>
+              <Text style={styles.textbuscar}>Buscar</Text>
             </View>
           </View>
+          <PictureImageHead />
         </View>
       </SafeAreaView>
+
       <ScrollView>
-        <View style={styles.allCards}>
-          <View style={styles.cardsLeftTop}>
-            <FavMusic />
-            <Text style={styles.text}>{"Músicas \nCurtidas"}</Text>
-          </View>
-          <View style={styles.cardsRightTop}>
-            <IncubusMusic />
-            <Text style={styles.text}>{"This Is \nIncubus"}</Text>
-          </View>
-          <View style={styles.cardsLeft}>
-            <RedHotMusic />
-            <Text style={styles.text}>{"This Is Red Hot\nChili Peppers"}</Text>
-          </View>
-          <View style={styles.cardsRight}>
-            <AudioslaveMusic />
-            <Text style={styles.text}>{"Audioslave"}</Text>
-          </View>
-          <View style={styles.cardsLeft}>
-            <AliceInChainsMusic />
-            <Text style={styles.text}>{"This Is Alice In \nChains"}</Text>
-          </View>
-          <View style={styles.cardsRight}>
-            <ArticMonkeysMusic />
-            <Text style={styles.text}>{"Arctic Monkeys"}</Text>
-          </View>
-          <View style={styles.cardsLeft}>
-            <AllenLandeMusic />
-            <Text style={styles.text}>{"This Is Allen \nLand"}</Text>
-          </View>
-          <View style={styles.cardsRight}>
-            <LinkinParkMusic />
-            <Text style={styles.text}>{"Linkin Park"}</Text>
+        <View style={styles.containerimput}>
+          <View style={styles.searchContainer}>
+            <TextInput
+              style={styles.input}
+              placeholder="🔍  O que você quer ouvir?"
+              placeholderTextColor="#555"
+            />
           </View>
         </View>
-
-        <View>
-          <Text style={styles.textStation}>Estações recomendadas</Text>
-          <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-            <TouchableOpacity>
-              <RadioAlterBridgeMusic />
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <RadioAudioslaveMusic />
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <RadioChrisCornellMusic />
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <RadioEdguyMusic />
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <RadioFooFightersMusic />
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <RadioPearlJamMusic />
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <RadioStrokesMusic />
-            </TouchableOpacity>
-          </ScrollView>
-        </View>
-
-        <View style={styles.card2}>
-          <Text style={styles.textStation}>Suas músicas estão com saudade</Text>
-          <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-            <TouchableOpacity>
-              <Playlist90RockDriveMusic />
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <PlaylistCapitalInicialMusic />
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <PlaylistEdguyMusic />
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <PlaylistMusicaPopularCaicaraMusic />
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <Playlist90rockAnthesMusic />
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <Playlist90acousticMusic />
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <PlaylistRockAcusticoMusic />
-            </TouchableOpacity>
-          </ScrollView>
+        <View style={styles.explore}>
+          <Text style={styles.textgeneros1}>Explore seus gêneros</Text>
+          <View style={styles.allgifs}>
+            <GifPowerrock />
+            <GifRockGaucho />
+            <GifMpb />
+          </View>
+          <Text style={styles.textgeneros2}>Navegar por todas as seções</Text>
+          <View style={styles.allsection}>
+            <View style={styles.section}>
+              <Musicaimg />
+            </View>
+            <View style={styles.section}>
+              <Brasilimg />
+            </View>
+            <View style={styles.section}>
+              <Eventosimg />
+            </View>
+            <View style={styles.section}>
+              <Feitospravcimg />
+            </View>
+            <View style={styles.section}>
+              <Lancamentoimg />
+            </View>
+            <View style={styles.section}>
+              <Mariliaimg />
+            </View>
+            <View style={styles.section}>
+              <Paradasimg />
+            </View>
+            <View style={styles.section}>
+              <Podcastsimg />
+            </View>
+            <View style={styles.section}>
+              <Popimg />
+            </View>
+            <View style={styles.section}>
+              <Lancamentosimg />
+            </View>
+            <View style={styles.section}>
+              <HipHopimg />
+            </View>
+            <View style={styles.section}>
+              <Originaisimg />
+            </View>
+            <View style={styles.section}>
+              <Paradas2img />
+            </View>
+            <View style={styles.section}>
+              <Nocarroimg />
+            </View>
+            <View style={styles.section}>
+              <Funkimg />
+            </View>
+            <View style={styles.section}>
+              <SambaPagodeimg />
+            </View>
+            <View style={styles.section}>
+              <Descobririmg />
+            </View>
+            <View style={styles.section}>
+              <Radioimg />
+            </View>
+          </View>
         </View>
       </ScrollView>
       <View style={styles.Musicbar}>
